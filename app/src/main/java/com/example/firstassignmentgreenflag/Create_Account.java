@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import java.util.regex.Matcher;
 
 import java.util.regex.Pattern;
 
@@ -31,34 +32,44 @@ public class Create_Account extends AppCompatActivity{
         btn_next.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
-                /*if (isValid (et_email.getTransitionName ().toString ()))
-                   Toast.makeText (Create_Account.this, "Is Valid", Toast.LENGTH_SHORT).show ();
-                    else
-                Toast.makeText (Create_Account.this, "Is Not Valid", Toast.LENGTH_SHORT).show ();*/
-               Intent intent = new Intent();
-               intent.setClass (getApplicationContext (),pg_three.class);
-               intent.putExtra ("email",et_email.getText ().toString ());
-               intent.putExtra ("password",et_password.getText ().toString ());
-               startActivity (intent);
+                if ((!isValid(et_email.getText().toString ())) || (!isValidPW (et_password.getText().toString ()))) {
+                    Toast.makeText(Create_Account.this,
+                            "Email or Password Is Invalid",
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else
+                Toast.makeText (Create_Account.this, "Email Is Valid", Toast.LENGTH_SHORT).show ();
+                Intent intent = new Intent();
+                intent.setClass (getApplicationContext (),pg_three.class);
+                intent.putExtra ("email",et_email.getText ().toString ());
+                intent.putExtra ("password",et_password.getText ().toString ());
+                startActivity (intent);
             }
-
-
         });
-
-
     }
-   /* public static boolean isValid(String email)
-    {
+
+    public static boolean isValid(String email) {
         String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
                 "[a-zA-Z0-9_+&*-]+)*@" +
                 "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
                 "A-Z]{2,7}$";
 
         Pattern pat = Pattern.compile(emailRegex);
-        if (email == null)
+        if (email == null) {
             return false;
+        }
         return pat.matcher(email).matches();
-    }*/
+    }
 
-   //Hello world
+    public static boolean isValidPW( final String password){
+        String passwordRegex = "((?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%!]).{8,40})";
+        Pattern pat = Pattern.compile (passwordRegex);
+        if (password == null){
+            return false;
+        }
+        return pat.matcher (password).matches ();
+    }
+
+
 }
