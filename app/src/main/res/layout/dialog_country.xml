@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    >
+
+
+    <TextView
+        android:id="@+id/pick_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pick your country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/museosans_500"
+        android:textSize="33sp"/>
+
+    <Button
+        android:id="@+id/btn_not_specified"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Not Specified"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_country"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_malaysia"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Malaysia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_not_specified"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_united_states"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="United States"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_malaysia"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_indonesia"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Indonesia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_united_states"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_france"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="France"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_indonesia"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_italy"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Italy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_france"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_singapore"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Singapore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_italy"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_new_zealand"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="New Zealand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_singapore"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/btn_india"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="India"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_new_zealand"
+        android:background="@drawable/btn_grad_green"
+        android:fontFamily="@font/museosans_300"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"/>
+
+</android.support.constraint.ConstraintLayout>

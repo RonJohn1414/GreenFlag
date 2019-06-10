@@ -1,14 +1,12 @@
 package com.example.firstassignmentgreenflag;
 
 import android.content.Intent;
-import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import java.util.regex.Matcher;
 
 import java.util.regex.Pattern;
 
@@ -41,7 +39,7 @@ public class Create_Account extends AppCompatActivity{
                 else
                 Toast.makeText (Create_Account.this, "Email Is Valid", Toast.LENGTH_SHORT).show ();
                 Intent intent = new Intent();
-                intent.setClass (getApplicationContext (),pg_three.class);
+                intent.setClass (getApplicationContext (), PgThree.class);
                 intent.putExtra ("email",et_email.getText ().toString ());
                 intent.putExtra ("password",et_password.getText ().toString ());
                 startActivity (intent);

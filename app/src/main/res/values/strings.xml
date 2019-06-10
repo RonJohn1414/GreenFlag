@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FirstAssignmentGreenFlag</string>
+
+    <string-array name="spinner_country_array">
+        <item name="not_specified">Not Specified</item>
+        <item name="malaysia">Malaysia</item>
+        <item name="united_states">United States</item>
+        <item name="indonesia">Indonesia</item>
+        <item name="france">France</item>
+        <item name="italy">Italy</item>
+        <item name="singapore">Singapore</item>
+        <item name="new_zealand">New Zealand</item>
+        <item name="india">India</item>
+    </string-array>
 </resources>

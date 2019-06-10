@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SaveInstanceTest</string>
+    <string name="btn_save_to_sp">Save to SP</string>
+    <string name="btn_read_from_sp">Read from SP</string>
 </resources>
